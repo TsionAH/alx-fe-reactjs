@@ -3,6 +3,8 @@ import RecipeList from './components/RecipeList';
 import AddRecipeForm from './components/AddRecipeForm';
 import RecipeDetails from './components/RecipeDetails';
 import SearchBar from './components/SearchBar';
+import FavoritesList from './components/FavoritesList';
+import RecommendationsList from './components/RecommendationsList';
 
 function App() {
   return (
@@ -11,6 +13,7 @@ function App() {
         <Link to="/">Home</Link>
       </nav>
       <Routes>
+        {/* Home Page */}
         <Route
           path="/"
           element={
@@ -19,9 +22,14 @@ function App() {
               <SearchBar />
               <AddRecipeForm />
               <RecipeList />
+              {/* ✅ Added new components here */}
+              <FavoritesList />
+              <RecommendationsList />
             </>
           }
         />
+
+        {/* Recipe Details Page */}
         <Route path="/recipes/:recipeId" element={<RecipeDetails />} />
       </Routes>
     </Router>
