@@ -18,6 +18,15 @@ const useRecipeStore = create((set) => ({
         r.id === updatedRecipe.id ? updatedRecipe : r
       ),
     })),
+      // ✅ Search term management
+  setSearchTerm: (term) =>
+    set((state) => {
+      const filtered = state.recipes.filter((recipe) =>
+        recipe.title.toLowerCase().includes(term.toLowerCase())
+      );
+      return { searchTerm: term, filteredRecipes: filtered };
+    }),
+
 
   // ✅ Replace whole list (if needed)
   setRecipes: (recipes) => set({ recipes }),
