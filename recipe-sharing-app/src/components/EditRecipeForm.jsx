@@ -6,9 +6,9 @@ const EditRecipeForm = ({ recipe }) => {
   const [title, setTitle] = useState(recipe.title);
   const [description, setDescription] = useState(recipe.description);
 
-  const handleSubmit = (e) => {
-    e.preventDefault();
-    updateRecipe({ ...recipe, title, description }); // keep id the same
+  const handleSubmit = (event) => {
+    event.preventDefault(); // ✅ prevents page reload on form submission
+    updateRecipe({ ...recipe, title, description }); // ✅ updates recipe while keeping id the same
   };
 
   return (
@@ -28,3 +28,4 @@ const EditRecipeForm = ({ recipe }) => {
 };
 
 export default EditRecipeForm;
+
