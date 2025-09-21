@@ -19,7 +19,7 @@ export default function Search() {
       const data = await githubService.fetchUserData(username.trim())
       setUserData(data)
     } catch (err) {
-      setError('Looks like we can’t find the user')
+      setError('Looks like we cant find the user')
     } finally {
       setLoading(false)
     }
@@ -27,7 +27,6 @@ export default function Search() {
 
   return (
     <div style={{ maxWidth: 400, margin: '0 auto' }}>
-      {/* Input form */}
       <form onSubmit={handleSubmit} style={{ display: 'flex', gap: 8, marginBottom: 16 }}>
         <input
           type="text"
@@ -39,7 +38,6 @@ export default function Search() {
         <button type="submit" style={{ padding: '8px 12px' }}>Search</button>
       </form>
 
-      {/* Conditional rendering */}
       {loading && <p>Loading...</p>}
       {error && <p style={{ color: 'red' }}>{error}</p>}
       {userData && (
