@@ -8,9 +8,9 @@ function UserProfile() {
         alt="User"
         className="rounded-full w-24 h-24 sm:w-28 sm:h-28 md:w-36 md:h-36 mx-auto"
       />
-      <h1 className="text-lg sm:text-xl md:text-2xl text-blue-800 my-4 text-center">
-        John Doe
-      </h1>
+      <h1 className="text-lg sm:text-xl md:text-xl text-blue-800 my-4 text-center">
+  John Doe
+</h1>
       <p className="text-sm sm:text-base md:text-base text-gray-600 text-center">
         Developer at Example Co. Loves to write code and explore new technologies.
       </p>
