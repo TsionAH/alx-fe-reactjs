@@ -29,6 +29,12 @@ function HomePage() {
         {data.map(recipe => (
             
           <div key={recipe.id} className="bg-white rounded-lg shadow-md p-4 flex flex-col items-center hover:scale-105 hover:shadow-xl transition-transform duration-300">
+             <Link
+        to="/add-recipe"
+        className="mb-6 bg-green-500 text-white px-4 py-2 rounded-md hover:bg-green-600 transition"
+      >
+        Add New Recipe
+      </Link>
            <Link to={`/recipe/${recipe.id}`}>
            <img src={recipe.image} alt={recipe.title} className="w-full h-48 object-cover rounded-lg mb-4" />
             <h2 className="text-xl font-semibold mb-2">{recipe.title}</h2>
