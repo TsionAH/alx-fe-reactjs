@@ -4,7 +4,9 @@
       "title": "Spaghetti Carbonara",
       "summary": "A classic Italian pasta dish with eggs, cheese, bacon, and black pepper.",
       "image": "https://via.placeholder.com/150",
-      "detail" : "[firts, second , third , forth ]"
+      "detail" : "[firts, second , third , forth ]",
+      "ingredients": ["potato", "tomato", "onion", "oil", "Pepper"],
+      "instructions": ["pelad potato", "Cook onion", "mix with papper and oil and tomato", "Combine everything and add water and cook all together"]
 
     },
     {
@@ -12,6 +14,8 @@
       "title": "Chicken Tikka Masala",
       "summary": "Chunks of grilled chicken (tikka) cooked in a smooth buttery & creamy tomato based gravy.",
       "image": "https://via.placeholder.com/150",
-      "detail" : "[firts:dnch melat , second: mectef , third:mateb , forth:mabsl ]"
+      "detail" : "[firts:dnch melat , second: mectef , third:mateb , forth:mabsl ]",
+      "ingredients": ["Spaghetti", "Eggs", "Bacon", "Cheese", "Pepper"],
+      "instructions": ["Boil pasta", "Cook bacon", "Mix eggs and cheese", "Combine everything"]
     }
   ]

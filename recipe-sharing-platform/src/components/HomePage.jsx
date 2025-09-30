@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 
 function HomePage() {
   const [data, setData] = useState([]);
-  const colors = ["bg-red-400", "bg-green-400", "bg-blue-400"];
+  const colors = ["bg-red-400", "bg-green-400", "bg-yellow-400"];
   const [currentColorIndex, setCurrentColorIndex] = useState(0);
 
   useEffect(() => {

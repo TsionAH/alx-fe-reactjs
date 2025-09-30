@@ -1,4 +1,5 @@
 import { useParams } from "react-router-dom";
+import { useEffect } from "react";
 import recipesData from "../data.json";
 
 function RecipeDetail() {
@@ -16,7 +17,12 @@ function RecipeDetail() {
       <p className="text-gray-700 text-center mb-6">{recipe.summary}</p>
       {recipe.detail && (
         <div className="w-full bg-white shadow-md rounded-lg p-4">
-          <h3 className="text-2xl font-semibold mb-2">Details</h3>
+          <h3 className="text-2xl font-semibold mb-2">Ingredients:</h3>
+          <ul>{recipe.ingredients.map(item => <li key ={item}>{item}</li>)}</ul>
+          <h3 className="text-2xl font-semibold mb-2">Instructions:</h3>
+<ol>
+  {recipe.instructions.map((step, index) => <li key={index}>{step}</li>)}
+</ol>
           <p className="text-gray-600">{recipe.detail}</p>
         </div>
       )}
